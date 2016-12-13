@@ -21,7 +21,7 @@
             <% if current_user && current_user == group.user %>
               <%= link_to("Edit", edit_group_path(group), class: "btn btn-sm btn-default")%>
               <%= link_to("Delete", group_path(group), class: "btn btn-sm btn-default", method: :delete,  data: {confirm: "Are you sure?"}) %>
-            <% end >
+            <% end %>
           </td>
         </tr>
       <% end %>
